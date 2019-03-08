@@ -1,0 +1,82 @@
+.btn {
+  min-width: 8rem;
+  cursor: pointer;
+  border-width: 0;
+  .fa {
+    position: relative;
+    left: -.45rem;
+  }
+  &.btn-primary {
+    &.focus, &:focus {
+      box-shadow: none;
+    }
+  }
+
+}
+
+form {
+  .btn {
+    &.focus, &:focus {
+      background-color: darken($brand-primary, 15);
+    }
+  }
+}
+
+.btn-small {
+
+  padding: .25rem .85rem;
+  font-weight: 600;
+  //text-transform: uppercase;
+  .fa {
+    left: -.35rem;
+    top: -.1rem;
+    font-size: .7rem;
+  }
+}
+
+.btn-nav {
+  background-color: $gray-lighter;
+  color: black;
+  text-transform: uppercase;
+  box-shadow: inset -56px 0px 45px -60px rgba(0, 0, 0, .5);
+  list-style-type: none;
+  width: 100%;
+  &[disabled], &.disabled {
+    cursor: not-allowed;
+    color: $gray-light;
+  }
+  &:hover {
+    background-color: $gray-dark;
+    color: white;
+  }
+  &.active {
+    background-color: $brand-primary;
+    color: white;
+    cursor: default;
+  }
+
+}
+
+.btn-hamburger {
+  &, &:focus {
+    outline: 0 none;
+  }
+  &:before {
+    content: $fa-var-bars;
+  }
+  &.active {
+    &:before {
+      content: $fa-var-close;
+    }
+  }
+  min-width: .5rem;
+  padding: .45rem .7rem;
+  display: inline-block;
+  font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome;
+  font-size: 2rem;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: 0 none;
+}
+

@@ -1,0 +1,24 @@
+<form class="form"
+      name="form"
+      novalidate>
+
+  <h2 class="h2">Update your password</h2>
+
+  <div class="form-group">
+    {{> atoms-label( label: "Token*", for: "tokeninput")}}
+    {{> atoms-textinput(type:"text", name: "tokeninput",  placeholder: "" )}}
+  </div>
+
+  <div class="form-group">
+    {{> atoms-label( label: "New password*", for: "passinput")}}
+    {{> atoms-textinput(type:"password", name: "passinput",  placeholder: "" )}}
+  </div>
+
+  <div class="form-group">
+    {{> atoms-label( label: "Confirm new password*", for: "passinput2")}}
+    {{> atoms-textinput(type:"password", name: "passinput2",  placeholder: "" )}}
+  </div>
+  <div class="form-group">
+    {{> atoms-btn( label: "Update password",styleModifier:"btn-primary", type: "submit")}}
+  </div>
+</form>

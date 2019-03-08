@@ -1,0 +1,23 @@
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.__demo__ {
+  .row {
+    margin-bottom: 1rem;
+    &:first-child {
+      margin-top: 1rem;
+    }
+  }
+  h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+.__btn__demo__ {
+  .btn {
+    display: block;
+
+  }
+}

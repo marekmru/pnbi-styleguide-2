@@ -1,0 +1,40 @@
+.header {
+  background-color: $brand-primary;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  h2, h3 {
+    color: rgba(255, 255, 255, .15);
+    font-size: 1.5rem;
+    margin: 0;
+    user-select: none;
+    display: inline-block;
+  }
+
+  h2 {
+    flex: 1 1 auto;
+  }
+
+}
+
+////////////////////////////////////
+.footer {
+  padding: .5rem 0;
+  background: #fcfcfc linear-gradient($gray-lighter, $gray-lightest);
+
+  text-align: center;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #bfbfbf;
+  }
+}
+
+

@@ -1,0 +1,36 @@
+.input-group {
+  .form-control {
+    &[type="date"], &[type="datetime"], &[type="datetime-local"] {
+      flex-direction: row;
+      //mmr
+    }
+  }
+}
+
+.input-search {
+  position: relative;
+  input {
+    text-indent: 1.75rem;
+  }
+  .fa-search {
+    color: $gray-light;
+    position: absolute;
+    left: .68rem;
+    top: .75rem;
+    font-size: 1.25rem;
+
+  }
+  input:focus + .fa-search {
+    color: lighten($brand-primary, 20);
+  }
+}
+
+/*hack ie edge palceholder offset*/
+/*@supports (-ms-ime-align:auto) {
+  .input-search {
+    input {
+      text-indent: 12px;
+    }
+  }
+
+}*/

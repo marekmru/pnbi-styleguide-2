@@ -1,0 +1,30 @@
+{
+  "name": "pnbi-styleguide",
+  "description": "",
+  "main": [
+    "source/css/style.css"
+  ],
+  "authors": [
+    "Markus Mrugalla",
+    "Alexander Gretschan"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "keywords": [
+    "Styleguide",
+    "Plan.net",
+    "Business",
+    "Intelligence",
+    "Bootstrap"
+  ],
+  "homepage": "https://github.com/plan-net/style",
+  "_release": "0.2.4.7",
+  "_resolution": {
+    "type": "tag",
+    "tag": "0.2.4.7",
+    "commit": "5f16ab76ea7014947e8d828c413cc7c42095d803"
+  },
+  "_source": "https://github.com/plan-net/style.git",
+  "_target": "0.2.4.7",
+  "_originalSource": "pnbi-styleguide"
+}

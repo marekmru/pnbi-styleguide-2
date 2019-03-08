@@ -1,0 +1,76 @@
+[type="text"]:focus,
+[type="password"]:focus,
+[type="datetime"]:focus,
+[type="datetime-local"]:focus,
+[type="date"]:focus,
+[type="month"]:focus,
+[type="time"]:focus,
+[type="week"]:focus,
+[type="number"]:focus,
+[type="email"]:focus,
+[type="url"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="tel"]:focus,
+[type="color"]:focus {
+  outline: 0 none;
+}
+
+[type="text"],
+[type="password"],
+[type="datetime"],
+[type="datetime-local"],
+[type="date"],
+[type="month"],
+[type="time"],
+[type="week"],
+[type="number"],
+[type="email"],
+[type="url"],
+[type="search"],
+[type="tel"] {
+  &.ng-dirty.ng-invalid, &.invalid {
+    color: darken($brand-warning, 20);
+    border: 2px solid $brand-warning;
+    box-shadow: 0 0 1px lighten($brand-warning, 10%) inset, 0 0 1px $brand-warning;
+  }
+}
+
+select {
+  &.form-control {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    &:not([size]):not([multiple]) {
+      height: auto;
+    }
+  }
+}
+
+.form-control label {
+  margin-bottom: 0.125rem;
+  user-select: none;
+}
+
+label.form-check-label {
+  user-select: none;
+}
+
+textarea.form-control {
+  line-height: 1.5rem;
+}
+
+input {
+  &[type=radio],
+  &[type=checkbox] {
+    outline-color: transparent;
+  }
+}
+
+::-webkit-inner-spin-button {
+  display: none;
+}
+
+
+
+
+
